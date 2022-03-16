@@ -1,0 +1,405 @@
+/* Minimal Satu Animasi */
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Book Antiqua";
+  margin: 0;
+}
+
+.clear{
+  clear: both;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1170px;
+  width: 100%;
+}
+
+header{
+  height: 65px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.active {
+  background-color: rgba(17, 23, 25, 0.9);
+}
+
+.header-left{
+  float: left;
+}
+
+.logo{
+  margin-top: 20px;
+  width: 124px;
+}
+
+.header-right{
+  float: right;
+}
+
+.header-right ul{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header-right li{
+  list-style: none;
+}
+
+.header-right a{
+  color: white;
+  display: block;
+  float: left;
+  line-height: 65px;
+  padding: 0 25px;
+  transition: all 0.5s;
+}
+
+.header-right a:hover{
+  transform: scale(1.03);
+}
+
+.button{
+  position: absolute;
+  top: 22px;
+  right: 10px;
+  display: none;
+  width: 30px;
+  height: 21px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.top-wrapper{
+  background-image: url("./photo/background.jpg");
+  background-size: cover;
+  color: white;
+  padding: 220px 0 170px 0;
+  text-align: center;
+}
+
+.top-wrapper h1{
+  font-size: 60px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+  animation-duration: 2s;
+}
+
+.top-wrapper p{
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  animation-duration: 2.2s;
+}
+
+/* our team */
+.main{
+    width: 100%;
+    background: linear-gradient(rgba(33,33,33,0.8), rgba(240,240,240));
+    padding: 50px 0;
+    text-align: center;
+}
+
+.heading{
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+h2 {
+  font-size: 33px;
+  font-style: oblique;
+  font-variant: small-caps;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #2320B6;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+  0px 8px 13px rgba(0, 0, 0, 0.1),
+  0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.myTeam{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.profile{
+    width: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.foto-profile{
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.foto-profile img{
+    border: 3px solid rgb(212, 212, 212);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.7);
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.prof1{
+    margin-right: -160px;
+}
+.prof2{
+    margin-right: -130px;
+}
+.prof3{
+    z-index: 2;
+}
+.prof4{
+    margin-left: -130px;
+    z-index: 1;
+}
+.prof5{
+    margin-left: -160px;
+}
+.foto-prof2, .foto-prof4{
+    width: 120px;
+    height: 120px;
+    opacity: 0.6;
+}
+.foto-prof1, .foto-prof5{
+    width: 90px;
+    height: 90px;
+    opacity: 0.3;
+}
+.foto-prof2 img, .foto-prof4 img{
+    width: 120px;
+    height: 120px;
+}
+.foto-prof1 img, .foto-prof5 img{
+    width: 90px;
+    height: 90px;
+}
+.title{
+    margin-top: 25px;
+    color: white;
+}
+.title h4{
+    margin: 0;
+	  padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Teko', sans-serif;
+    font-style: italic;
+    text-shadow: 0 0 1px #222;
+}
+.title p{
+    margin: 0;
+	  padding: 0;
+    margin: 8px 0;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Teko', sans-serif;
+    font-style: italic;
+    color: rgb(41, 136, 245);
+}
+
+.geser{
+    transform: translateX(-100px) scale(0.5);
+    opacity: 0;
+    transition: 1s;
+}
+.geser1{
+    transform: translateX(-100px) scale(1.5);
+    opacity: 0;
+    transition: 1s;
+}
+
+/* digitalent */
+.digitalent {
+  background-color: #eee;
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.digit-logo {
+  width: 40%;
+  margin: auto 0;
+}
+
+.digit-teks {
+  width: 60%;
+  font-size: 22px;
+  text-align: justify;
+  font-family: Arial,
+  Helvetica,
+  sans-serif;
+}
+
+.digit-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pKiri,
+.pKanan {
+  opacity: 0;
+  transition: 1.5s;
+}
+
+/* form */
+.kontak {
+  background-image: url("photo/form.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 150px 0;
+}
+
+.formulir {
+  background-color: white;
+  width: 50%;
+  margin: 0 auto;
+  padding: 30px;
+  color: black;
+  border-radius: 10px;
+}
+
+.formulir label {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulir input,
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ebebeb;
+  padding: 5px 0;
+  color: #222;
+  margin-bottom: 31px;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.kontak .container .heading{
+  padding-top: 0;
+}
+
+.kontak button {
+  width: auto;
+  background: #49b152;
+  color: #fff;
+  padding: 16px 17px;
+  font-size: 13px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 1px 15px 0px rgba(76, 177, 73, 0.7);
+}
+
+.kontak button:active {
+  background: #3f9246;
+  color: black;
+}
+
+/* footer */
+.footer{
+	margin: 0;
+	padding: 0;
+    background-color: rgb(8, 17, 95);
+    padding: 50px 0;
+    width: 100%;
+}
+.myFooter{
+	margin: 0;
+	padding: 0;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    flex-wrap: wrap;
+}
+.kotak{
+	margin: 0;
+	padding: 0;
+    width: 20%;
+}
+.kotak h3{
+	margin: 0;
+	padding: 0;
+    font-size: 24px;
+    font-style: oblique;
+    font-variant: small-caps;
+}
+.garisFooter{
+	margin: 0;
+	padding: 0;
+    display: flex;
+    /* justify-content: center; */
+}
+.garis1, .garis2, .garis3{
+	margin: 0;
+	padding: 0;
+    border: 1.5px solid rgb(25, 224, 125);
+    width: 100%;
+}
+.garis2{
+    border: 1.5px solid rgb(252, 219, 35);
+}
+.garis3{
+    border: 1.5px solid rgb(252, 28, 28);
+}
+.teamFooter {
+	margin: 0;
+	padding: 0;
+    margin-top: 10px;
+}
+.teamFooter li{
+	margin: 0;
+	padding: 0;
+    line-height: 20px;
+    font-family: monospace;
+    font-weight: bold;
+}
+.teamFooter li a{
+	margin: 0;
+	padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.textFooter p {
+  margin: 0;
+  padding: 0;
+}
+
+.textFooter{
+	margin: 0;
+	padding: 0;
+    background-color: rgb(4, 5, 92);
+    padding: 20px 0;
+    color: wheat;
+    text-align: center;
+}

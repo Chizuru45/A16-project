@@ -1,0 +1,166 @@
+/* Untuk Tablet */
+@media all and (max-width: 1000px){
+  .top-wrapper h1{
+    font-size: 45px;
+  }
+
+  .top-wrapper p{
+    font-size: 25px;
+  }
+  .profil1 {
+    width: 50%;
+  }
+
+  .profil2 {
+    width: 50%;
+  }
+  
+  /* footer */
+    .myFooter{
+        justify-content: space-evenly;
+    }
+    .logo-footer{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .logo-footer img{
+        width: 200px;
+    }
+    .kotak{
+        width: 30%;
+    }
+
+}
+
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px){
+   .button{
+    cursor: pointer;
+    display: flex;
+  }
+
+  header{
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  header.menu{
+    background-color: rgba(17, 23, 25, 1);
+  }
+
+
+  .header-right{
+    display: none;
+    width: 100%;
+  }
+
+  .header-right a{
+    padding: .5rem 1rem;
+  }
+
+  .header-right ul{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header-right.menu{
+    background-color: rgba(17, 23, 25, 1);
+    display: flex;
+  }
+
+  .header-right li a{
+    text-align: center;
+    width: 100%;
+  }
+
+  .profil1, .profil2{
+    width: 100%;
+  }
+
+  .top-wrapper{
+    text-align: left;
+  }
+
+  .top-wrapper h1{
+    font-size: 35px;
+    line-height: 36px;
+  }
+
+  .top-wrapper p{
+    font-size: 20px;
+    line-height: 20px;
+  }
+  
+/* digitalent   */
+  .digit-wrapper {
+    flex-direction: column;
+  }
+
+  .digit-logo {
+    width: 100%;
+  }
+
+  .digit-logo img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .digit-teks {
+    width: 100%;
+    font-size: 16px;
+    text-align: justify;
+  }
+  
+/*  responsive our team  */
+  .garis{
+        width: 50%;
+   }
+   .prof1, .prof2, .prof4, .prof5{
+        width: 0;
+        height: 0;
+        display: none;
+   }
+  .geser{
+        transform: translateX(-100px);
+    }
+  
+  /* formulir */
+  .formulir {
+    width: 75%;
+  }
+  
+  .formulir label {
+    font-size: 15px;
+  }
+
+  .formulir input,
+  textarea {
+    font-size: 13px;
+  }
+
+  .heading h2 {
+    font-size: 23px;
+  }
+  
+  /* footer */
+    .myFooter{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .garisFooter{
+        margin: 0 auto;
+    }
+    .kotak{
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    .teamFooter{
+        padding-left: 10px;
+    }
+  
+}
